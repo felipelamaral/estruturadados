@@ -10,6 +10,7 @@
 #include <string.h>
 
 //felipe passou por aqui
+//r
 typedef struct dia{
     char data[11];
     struct hora *h;
