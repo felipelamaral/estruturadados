@@ -53,8 +53,8 @@ void escrevedata(ptdia *p){
 }*/
 
 
-void inseredia(ptdia *p, char dta[11], char hro[6], char atv[100]){
-    ptdia aux, ant, ndia3;
+void inseredia(ptdia *p, char dta, char hro, char atv){
+    ptdia aux, ant, ndia;
     pthora nhora;
     ndia=(ptdia)malloc(sizeof(struct dia));
     nhora=(pthora)malloc(sizeof(struct hora));
@@ -80,7 +80,14 @@ void inseredia(ptdia *p, char dta[11], char hro[6], char atv[100]){
         ant->prox=ndia;
     }
 }
-    
+    //mostralista
+void mostralista(pdia com){
+    while(com){
+         printf("%c",com->info);
+         com=com->prox;
+    }
+}
+
 /*
  * 
  */
